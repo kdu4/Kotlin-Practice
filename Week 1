@@ -1,8 +1,26 @@
-//Kotlin//
+//Kotlin
 
-//print function//
+//print function
+
 fun main() { 
   println("Hello World, I am Kevin :)") 
 }
 
-//
+//Difference of print and println
+
+fun main() {
+  print("Hello, ")
+  print("I am Kevin.\n")
+  println("Hello, ")
+  println("I am Kevin.")
+}
+
+//Commneting in Kotlin
+
+fun main() {
+// This is a comment by Kevin. 
+// Where do the boats go when they are sick? 
+/* To the dock.*/
+  println("There is a joke above me!") 
+}
+

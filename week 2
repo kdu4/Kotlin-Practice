@@ -1,0 +1,15 @@
+// Operators 
+
+fun main() {  
+  var x = 10
+  var y = x + 5
+  var z = y * 5
+  var total = x + y + z
+  println(x)
+  println(y)
+  println(z)
+  println(total)
+  println("I can not believe that ${total} is the total!")
+}
+
+//

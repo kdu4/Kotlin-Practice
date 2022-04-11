@@ -12,4 +12,99 @@ fun main() {
   println("I can not believe that ${total} is the total!")
 }
 
-//
+// String Access
+
+fun main() {
+  var txt = "It's a practice."
+  println(txt[5]) 
+  println(txt[9])
+}
+
+//character-in-string count (.length)
+
+fun main() {
+  var text = "I want to know the length of this exact string!"
+  println(text)
+  println("The length of the txt string is: " + text.length);
+}
+
+//Upper case and lower case functions
+
+fun main() {
+  var txt = "This is a test!"
+  println(txt.toUpperCase())
+  println(txt.toLowerCase())
+}
+
+//string comparison
+
+fun main() {
+  var txt1 = "Hello World"
+  var txt2 = "Hello World"
+  println(txt1.compareTo(txt2))  // Outputs 0 (they are equal)
+  
+  var test1 = "This is not a test!"
+  var test2 = "This is a test!"
+  println(test1.compareTo(test2)) 
+  //Output value higher than zero becuase the subject have more character than the object
+  
+  var test3 = "This is a test!"
+  var test4 = "This is not a test!"
+  println(test3.compareTo(test4)) 
+  //Output value lower than zero becuase the subject have less character than the object
+ }
+ 
+ //Substring location
+ 
+ fun main() {
+  var test = "Hey, look here!"
+  println(test.indexOf("!"))
+}
+
+//String merge
+
+fun main() {
+  var firstName = "Kevin"
+  var lastName = "Du"
+  println(firstName + " " + lastName)
+  println(firstName.plus(" " + lastName))
+}
+
+//Boolean
+
+fun main() {
+  println (10 < 100) //outputs true, beucase 10 is smaller than 100
+  val x = 10
+  val y = 100
+  println (x > y) //outputs false, because 10 is not larger than 100
+  val z = x + y
+  print (z == x) //outputs faluse, because 110 does not equal 10
+}
+
+//if, else, else if
+
+fun main(args: Array<String>) {
+ println ("This is an little tool that helps you compare the numbers!\nPlease enter a integer for the following!")
+ println ("Please enter your first number: ")
+ val number1 = readline()
+ println ("Please enter your second number: ")
+ val number2 = readline()
+ val sum = number1 + number2
+ 
+ if (number1 > number2)  {
+ 	val difference = number1 - number2
+  
+ } else if (number2 > number1){
+ 	val difference = number2 - number1
+    
+ } else if (number1 == number2) {
+ 	val difference = 0
+    
+ } else {
+ 	println ("ERROR!")
+    
+ }
+ 
+ println ("The sum of your input is $sum and the difference is $difference. Thank you!")
+ 
+}

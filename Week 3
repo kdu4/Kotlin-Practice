@@ -23,3 +23,56 @@ fun main() {
   }
 }
 
+//continue
+
+fun main () {
+var num = 0
+while (num < 10) {
+  if (num == 7) {
+    num++
+    continue
+  }
+  println(num)
+  num++
+}
+}
+
+//break
+
+fun main() {
+  var num = 0
+  while (num < 10) {
+    println(num)
+    num++
+    if (num == 7) {
+      break
+    }
+  }
+}
+
+// Access and change array
+
+fun main() {
+  val marks = arrayOf("90", "94", "12", "56")
+  println (marks[0])
+  marks[2] = "45"
+  println (marks[2])
+}
+
+//amount of elements
+
+fun main() {
+  val marks = arrayOf("90", "70", "90", "80", "54", "76")
+  println(marks.size) // outputs 6 for six elements
+}
+
+//check for element existance
+
+fun main() {
+  val marks = arrayOf("90", "70", "90", "80", "54", "76")
+  if ("90" in marks) {
+  println ("True!!")
+  } else {
+  println ("Nope!!")
+  }
+}

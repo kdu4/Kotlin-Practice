@@ -1,0 +1,25 @@
+//When expression
+
+fun main() {
+  val mark = 4
+
+  val result = when (mark) {
+    1 -> "55%"
+    2 -> "65%"
+    3 -> "75%"
+    4 -> "90%"
+    else -> "Invalid entry!"
+  }
+  println(result)
+}
+
+// while loop
+fun main() {
+  var num = 0
+  while (num < 5) {
+  	var result = num * 5
+    println(result)
+    num++
+  }
+}
+

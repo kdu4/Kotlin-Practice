@@ -1,0 +1,14 @@
+//For loop
+
+fun main() {
+  val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+  val nums = arrayOf(1,2,3,4)
+  var y = 0
+  for (x in cars) {
+ 	print (nums[y])
+    println(x)
+    y++
+  }
+}
+
+//

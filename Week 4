@@ -1,14 +1,53 @@
 //For loop
 
 fun main() {
-  val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
-  val nums = arrayOf(1,2,3,4)
+  val cars = arrayOf("Hello", "there", "I'm", "Kevin") 
+  val nums = arrayOf(1,2,3,4) 
   var y = 0
   for (x in cars) {
- 	print (nums[y])
+ 	print (nums[y]) //for loop print out numbered lines
     println(x)
     y++
   }
 }
 
-//
+//Range
+fun main() {
+  var counter = 1
+  for (chars in 'a'..'z') {
+  	print(counter)
+    println(chars)
+    counter++
+  }
+}
+
+//Break and continue
+
+fun main() {
+  for (char in 'a'..'z') {
+    if (char in "m") {
+      continue
+    } else if (char in "x") {
+    	break
+    }
+    println(char)
+  }
+  println ("Output ends.")
+}
+
+//Functions
+
+fun thefunction(fname: String, byear: Int) {
+	println(fname + ", hello there! The function is called! Your birth year is " + byear + ".")
+}
+
+fun later(cyear: Int): Int {
+	return (cyear + 10)
+}
+
+fun main() {
+	
+	thefunction("Kevin Du", 2005)
+    var after = later (2005)
+    println ("It's " + after + " when I was ten!")
+}

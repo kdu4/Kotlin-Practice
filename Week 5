@@ -1,2 +1,35 @@
 //Class
 
+class room {
+  var number = ""
+  var students = ""
+  var subject = ""
+}
+
+fun main() {
+  val r1 = room ()
+  r1.number = "160"
+  r1.students = "36"
+  r1.subject = "Computer Science"
+  
+  val r2 = room ()
+  r2.number = "123"
+  r2.students = "39"
+  r2.subject = "Computer Engineering"
+  
+  println("The room number for " + r2.subject + " is: " + r2.number)
+}
+
+//Constructor
+
+class room(var number: String, var students: Int, var subject: String)
+
+fun main() {
+  val r1 = room("Portable 6", 45, "Math")
+  val r2 = room("135", 30, "History")
+  val r3 = room("165", 34, "Computer Science")
+
+  println(r1.number)
+  println(r2.students)
+  println(r3.subject)
+}
